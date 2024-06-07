@@ -1,0 +1,239 @@
+body {
+    font-family: Roboto-condensed;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #51a5dd;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    margin-right: 10px;
+    transform: rotate(45deg);
+    filter:  brightness(1) saturate(100%);
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.buscador button i {
+    font-size: 1rem;
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.buscador input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.buscador button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #3bb9d8;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+main {
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#home {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#home h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.galeria {
+    position: relative;
+    max-width: 100%;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 500px;
+    width: 70%;
+}
+
+.galeria-container {
+    display: flex;
+    animation: slide 12s infinite;
+}
+
+.galeria-slide {
+    min-width: 100%;
+    transition: 0.5s ease;
+    position: relative;
+}
+
+.galeria-slide img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.galeria-caption {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 4rem;
+    background: none;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0%); }
+    33% { transform: translateX(0%); }
+    36% { transform: translateX(-100%); }
+    69% { transform: translateX(-100%); }
+    72% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+.seccion-productos {
+    font-family: Arial;
+}
+
+.producto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.producto {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; 
+}
+
+.producto:hover {
+    transform: scale(1.05); 
+}
+.producto img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.producto-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(55, 83, 206, 0.8), rgba(82, 84, 177, 0.4));
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+.producto-info h3, .product-info p {
+    margin: 0;
+}
+
+.boton-carrito {
+    background-color: #283b92; /* Cambia el color de fondo del botón */
+    color: white; /* Cambia el color del texto del botón */
+    padding: 10px 20px; /* Ajusta el relleno del botón según sea necesario */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-carrito i {
+    margin-right: 50px; /* Ajusta el espaciado entre el icono y el texto del botón */
+}
+
+.boton-carrito:hover {
+    background-color: #153361; /* Cambia el color de fondo del botón al pasar el mouse */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 1rem;
+}
+
+form input, form textarea, form button {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #51a5dd;
+    color: white;
+    text-align: center;
+    padding: 0.4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
