@@ -5,4 +5,4 @@ En esta demo, generaremos una tiendaa de articulos de mascotas. La idea principa
 - El sitio debe incluir las estructuras de `Header`, `Main`, `Aside`, `Products`, `Form`, `Footer`.
 - El sitio debe mostar diferentes etiquetas, estableciendo los estándares de HTML5 para dar mayor semántica
 ## Esquema de pagina
-![Esquema de la pagina](/assets/images/esquemaPagina.jpeg)
+![Esquema de la pagina](/images/esquemaPagina.jpg)
